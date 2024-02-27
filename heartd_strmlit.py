@@ -31,7 +31,7 @@ def main():
     st.set_page_config(page_title = 'Heart Failure Predictor', layout ='wide')
 
     # add image
-    image = Image.open('Heart.png')
+    image = Image.open('heart.png')
     st.image(image, use_column_width= False)
 
     st.title('Heart Failure Predictor using Artificial Nueral Network')
@@ -60,4 +60,7 @@ def main():
     if st.button('Predict'):
         predict = heart_prediction([age, anaemia, creatinine_phosphokinase, diabetes, ejection_fraction, high_blood_pressure, platelets, serum_creatinine, serum_sodium, sex, smoking, time])
     st.success(predict)
+
+#run our script
+
 main()
