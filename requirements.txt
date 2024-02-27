@@ -1,0 +1,5 @@
+steamlit
+keras
+Pillow
+numpy
+tensorflow
